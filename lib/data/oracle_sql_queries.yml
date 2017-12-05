@@ -1,0 +1,6 @@
+COMPANY_INFO:
+  COUNT: 'select count(*) as mycount from hb22727.company_info'
+  UNIQUE_ID: 'SELECT company_id, count(company_id)
+              FROM hb22727.company_info
+              GROUP BY company_id
+              HAVING count(company_id) > 1'
